@@ -17,7 +17,7 @@ function registerUser() {
     const registrationForm = document.getElementById('registration-form');
     const formData = new FormData(registrationForm);
 
-    fetch(`${apiUrl}/routes/users`, { // Use apiUrl to construct the full URL
+    fetch(`https://github.com/areignel/El-Travels/blob/main/my-project-directory/routes/users.js`, { // Use apiUrl to construct the full URL
         method: 'POST',
         body: formData,
     })
@@ -38,7 +38,7 @@ function loginUser() {
     const loginForm = document.getElementById('login-form');
     const formData = new FormData(loginForm);
 
-    fetch(`${apiUrl}routes/users`, { // Use apiUrl to construct the full URL
+    fetch(`https://github.com/areignel/El-Travels/blob/main/my-project-directory/routes/users.js`, { // Use apiUrl to construct the full URL
         method: 'POST',
         body: formData,
     })
