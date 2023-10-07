@@ -2,7 +2,7 @@ const apiUrl = 'https://github.com/areignel/El-Travels/tree/main/my-project-dire
 
 // Function to fetch and display destinations
 function fetchDestinations() {
-    fetch(`${apiUrl}/routes/destinations`) // Use apiUrl to construct the full URL
+    fetch(`https://github.com/areignel/El-Travels/blob/main/my-project-directory/routes/destinations.js`) // Use apiUrl to construct the full URL
         .then((response) => response.json())
         .then((data) => {
             // ...rest of the code remains the same
