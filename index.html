@@ -35,12 +35,56 @@
         <section class="user-auth">
             <h2>User Authentication</h2>
             <!-- Registration and login forms can be added here -->
+            <h2>User Registration</h2>
+            <form id="registration-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="button" id="register-button">Register</button>
+            </form>
+        </section>
+
+         <!-- User Login -->
+        <section class="user-auth">
+            <h2>User Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+                <br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <br>
+                <button type="button" id="login-button">Login</button>
+            </form>
         </section>
 
         <!-- Booking Form -->
         <section class="booking">
             <h2>Book a Destination</h2>
             <!-- Booking form can be added here -->
+            <form id="booking-form">
+        <label for="destination">Select Destination:</label>
+        <select id="destination" name="destination" required>
+            <!-- Populate the select options dynamically using JavaScript -->
+        </select>
+        <br>
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+        <br>
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+        <br>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        <br>
+        <button type="button" id="book-button">Book Now</button>
+    </form>
         </section>
     </main>
 
