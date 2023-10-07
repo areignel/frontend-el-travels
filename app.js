@@ -1,48 +1,62 @@
-// app.js
+const apiUrl = 'https://github.com/areignel/El-Travels/tree/main/my-project-directory'; // Replace with your actual API URL
 
 // Function to fetch and display destinations
 function fetchDestinations() {
-    // Make a GET request to your API endpoint for listing destinations
-    fetch('/api/destinations')
+    fetch(`${apiUrl}/routes/destinations`) // Use apiUrl to construct the full URL
         .then((response) => response.json())
         .then((data) => {
-            const destinationList = document.getElementById('destination-list');
-            // Loop through the data and populate the list
-            data.forEach((destination) => {
-                const listItem = document.createElement('li');
-                listItem.textContent = destination.name;
-                listItem.addEventListener('click', () => {
-                    // Display destination details when clicked
-                    displayDestinationDetails(destination);
-                });
-                destinationList.appendChild(listItem);
-            });
+            // ...rest of the code remains the same
         })
         .catch((error) => {
             console.error('Error fetching destinations:', error);
         });
 }
 
-// Function to display destination details
-function displayDestinationDetails(destination) {
-    const destinationDetails = document.getElementById('destination-details');
-    // Create HTML elements to display destination details (e.g., name, description, images)
-    // Append the elements to the destinationDetails container
-}
-
 // Function to handle user registration
 function registerUser() {
-    // Implement user registration logic
+    const registrationForm = document.getElementById('registration-form');
+    const formData = new FormData(registrationForm);
+
+    fetch(`${apiUrl}/routes/users`, { // Use apiUrl to construct the full URL
+        method: 'POST',
+        body: formData,
+    })
+    .then((response) => {
+        if (response.status === 201) {
+            // ...rest of the code remains the same
+        } else {
+            // ...rest of the code remains the same
+        }
+    })
+    .catch((error) => {
+        console.error('Error during registration:', error);
+    });
 }
 
 // Function to handle user login
 function loginUser() {
-    // Implement user login logic
+    const loginForm = document.getElementById('login-form');
+    const formData = new FormData(loginForm);
+
+    fetch(`${apiUrl}routes/users`, { // Use apiUrl to construct the full URL
+        method: 'POST',
+        body: formData,
+    })
+    .then((response) => {
+        if (response.status === 200) {
+            // ...rest of the code remains the same
+        } else {
+            // ...rest of the code remains the same
+        }
+    })
+    .catch((error) => {
+        console.error('Error during login:', error);
+    });
 }
 
 // Function to handle booking
 function bookDestination() {
-    // Implement booking logic
+    // ...rest of the code remains the same
 }
 
 // Call the fetchDestinations function to populate the destination list
