@@ -1,0 +1,93 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background with an ancient parchment texture */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('C:\Users\USER\OneDrive\Desktop\pexels-pixabay-164595.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Style the content div (adjust styles as needed) */
+.content {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to the content */
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #975b2d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content container */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+/* Destination list styles */
+.destinations {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul#destination-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#destination-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Destination details styles */
+.destination-details {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* User authentication and booking form styles (customize as needed) */
+.user-auth, .booking {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Add your own custom styles for buttons, forms, and other elements */
+
+/* Responsive styles (customize as needed) */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul#destination-list li {
+        font-size: 16px;
+    }
+}
